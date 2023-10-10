@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/drawable-v24/background_kuning.xml" value="0.152" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/drawable-v24/background_orange.xml" value="0.152" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/drawable-v24/background_putih.xml" value="0.1575" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/drawable-v24/kotaksuhu.xml" value="0.152" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/drawable/background_abu.xml" value="0.1575" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/drawable/background_suhu.xml" value="0.16" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout-v21/activity_menuclick.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout-v21/fragment_home.xml" value="0.15" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_halaman_utama.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_lampu_jadwal.xml" value="0.14" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_lampu_manual.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_lampu_otomatis.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_menu_klik.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_menuclick.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_navheader.xml" value="0.1625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_register.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/activity_splash_screen.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/content_main.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/content_menu_klik.xml" value="0.12564102564102564" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/fragment_first.xml" value="0.12564102564102564" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/fragment_help_center.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/fragment_home.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/fragment_log_out.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/fragment_settings.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/fragment_user.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/layout/nav_header.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lampu/app/src/main/res/menu/menu_main.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

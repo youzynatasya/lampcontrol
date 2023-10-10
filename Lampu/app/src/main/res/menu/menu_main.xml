@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lampu.MainActivity"
+    tools:showIn = "navigation_view">
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Halaman Utama"
+            android:fontFamily="@font/poppinssemibold"/>
+
+        <item
+            android:id="@+id/nav_helpcenter"
+            android:icon="@drawable/ic_helpcenter"
+            android:title="Help Center"
+            android:fontFamily="@font/poppinssemibold"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Pengaturan"
+            android:fontFamily="@font/poppinssemibold"/>
+
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Keluar"
+                android:fontFamily="@font/poppinssemibold"/>
+        </menu>
+    </item>
+
+</menu>

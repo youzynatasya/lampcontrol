@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/backgroundabu"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/background_abu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backgroundabu"
+        android:layout_marginBottom="416dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="ShowPopupManual"
+            android:id="@+id/btnManual"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Manual"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            app:backgroundTint="@color/kuningtua" />
+
+        <Button
+            android:id="@+id/btnJadwal"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Jadwal"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            app:backgroundTint="@color/orange" />
+
+        <Button
+            android:onClick="ShowPopupOtomatis"
+            android:id="@+id/btnOtomatis"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Otomatis"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            app:backgroundTint="@color/kuningtua" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lampumati"
+        android:layout_width="180dp"
+        android:layout_height="170dp"
+        android:layout_alignBottom="@+id/backgroundabu"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="211dp"
+        android:src="@drawable/iconlampumati" />
+
+    <TextView
+        android:id="@+id/txtOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backgroundabu"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="177dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="OFF"
+        android:textColor="@color/red"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/kontLampu"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_alignEnd="@+id/backgroundabu"
+        android:layout_alignBottom="@+id/backgroundabu"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="29dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_putih">
+
+        <TextView
+            android:id="@+id/LampuMenyala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Lampu menyala pukul:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/timepickerstart"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:hint="Waktu Menyala"
+                android:textSize="15dp"
+                android:focusable="false"
+                android:onClick="showTimePickerDialog" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="-"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/timepickerend"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:hint="Waktu Mati"
+                android:textSize="15dp"
+                android:focusable="false"
+                android:onClick="showTimePickerDialog" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

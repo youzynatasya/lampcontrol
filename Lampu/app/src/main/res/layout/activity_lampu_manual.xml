@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/backgroundabu"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/background_abu"  />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backgroundabu"
+        android:layout_marginBottom="416dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnManual"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Manual"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            app:backgroundTint="@color/orange" />
+
+        <Button
+            android:onClick="ShowPopupJadwal"
+            android:id="@+id/btnJadwal"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Jadwal"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            app:backgroundTint="@color/kuningtua" />
+
+        <Button
+            android:onClick="ShowPopupOtomatis"
+            android:id="@+id/btnOtomatis"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Otomatis"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            app:backgroundTint="@color/kuningtua" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/backgroundabu"
+        android:layout_alignBottom="@+id/backgroundabu"
+        android:layout_marginTop="129dp"
+        android:layout_marginBottom="237dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/iconlampumati" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="100"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="134dp"
+            android:src="@drawable/iconlampunyala" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

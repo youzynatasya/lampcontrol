@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/halamanlogin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"/>
+
+    <ImageView
+        android:id="@+id/labelkuning"
+        android:src="@drawable/loginkuning"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Selamat Datang"
+        android:fontFamily="@font/poppinsbold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/formlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label"
+        android:layout_marginTop="30dp"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <EditText
+                android:id="@+id/txtEmail"
+                android:background="@drawable/background_putih"
+                android:hint="Email"
+                android:fontFamily="@font/poppinsregular"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/txtPassword"
+                android:background="@drawable/background_putih"
+                android:hint="Password"
+                android:inputType="text"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttlogin"
+        android:layout_below="@+id/formlogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="MASUK"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_orange"
+        app:backgroundTint="#FD8135"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/buttlogin"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Belum punya akun?"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <TextView
+            android:id="@+id/txtDaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="Daftar"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+</RelativeLayout>

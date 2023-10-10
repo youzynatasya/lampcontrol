@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".HalamanUtama"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:src="@drawable/logopolos"/>
+
+            <TextView
+                android:id="@+id/txtHalo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Halo, "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_menu"
+                android:layout_alignParentEnd="true"/>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ketsuhu"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/background_suhu" />
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".."
+                android:textSize="15dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".."
+                android:textSize="40dp"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/suhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".."
+                android:textSize="40dp"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="240dp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:id="@+id/derajat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="°C"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+
+            <TextView
+                android:id="@+id/txtMaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Maps"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="280dp">
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btnLampu"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/poppinssemibold"
+
+                android:text="Lampu"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:layout_marginTop="290dp"
+                app:backgroundTint="@color/orange" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_main"
+        android:visibility="visible"/>
+
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
